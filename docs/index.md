@@ -2,122 +2,40 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+#### ABOUT
 
-There should be whitespace between paragraphs.
+The 7D2D Mod Launcher finds, downloads, and installs overhauls and modlets for 7 Days To Die.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Originally created in 2014 to help players find mods, the Mod Launcher has gone through complete re-writes over the past few years.
 
-# Header 1
+The latest incarnation of the Mod Launcher is V5, created using Unity UI ToolKit.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+#### Features
 
-## Header 2
+*   Find and download dozens of overhauls, and keep them up to date on the latest versions.
+*	Maintain multiple versions of the same mod, switch back and forth for different saves, and worlds.
+*   Revisit past Alphas and their mods to relive.
+*   Find and install over 300 modlets per Alpha.
+*	Easily add in modlets from third party sites, such as nexus mods and 7 Days To Die Mods site.
+*	Create "My Mods", an empty overhaul that allows you to customize your vanilla experience.
+*	Build-in backups for Generated Worlds and Saves, snapshots taken every time you play.
+* 	Defaults to offline mode; no fetching of data on start up.
+*	Installer / UnInstaller ( windows only )
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+#### Support
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+*	Need some help, join the <a href="https://discord.gg/H6k6gDrgNW">Mod Launcher's Discord</a>
+*	Don't have Discord, but still need a hand? Email Support@7D2DModLauncher.org
+*	Want to donate? <a href="https://paypal.me/7d2dmodlauncher?locale.x=en_US">PayPal</a>
 
 
-### Definition lists can be used with HTML syntax.
+#### Technical Changes in V5
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+*	Removed the Git implementation, as it was causing instability issues with larger mods.
+* 	Uses git API to find versions and download links for Overhauls and Modlets.
+* 	Unity 2021's UI ToolKit.
+*	Downloads implemented using HTTP with a custom class to provide download progress.
+*	Remove UnityWebRequest download, as it was causing instability issues.
+*	Uses an InnoSetup for Windows Installer.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
