@@ -3,3 +3,5 @@ description: A Mod Manager for 7 Days To Die
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-midnight
+
+site.github.modlauncherversion: 5.0.0.47
